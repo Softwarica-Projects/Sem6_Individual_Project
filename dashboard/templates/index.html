@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Review Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Restaurant Review Analysis</h1>
+        </header>
+
+        <div class="dashboard">
+            <div class="input-section card">
+                <h2>Enter Your Review</h2>
+                <textarea 
+                    id="reviewInput" 
+                    placeholder="Type or paste a restaurant review here..."
+                    rows="6"
+                ></textarea>
+                
+                <div class="button-group">
+                    <button id="analyzeBtn" class="btn btn-primary">
+                        <span class="btn-icon">🔍</span> Analyze Review
+                    </button>
+                    <button id="generateBtn" class="btn btn-secondary">
+                        <span class="btn-icon">🎲</span> Generate Review
+                    </button>
+                    <button id="clearBtn" class="btn btn-secondary">
+                        <span class="btn-icon">🗑️</span> Clear Input
+                    </button>
+                    <button id="viewHistoryBtn" class="btn btn-success">
+                        <span class="btn-icon">📋</span> View Review History
+                    </button>
+                    <button id="clearHistoryBtn" class="btn btn-danger">
+                        <span class="btn-icon">🗑️</span> Clear All History
+                    </button>
+                </div>
+            </div>
+
+            <div id="statsSection" class="stats-section card" style="display: none;">
+                <h2>Analytics Dashboard</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 id="totalReviews">0</h3>
+                        <p>Total Reviews Analyzed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="positiveCount">0</h3>
+                        <p>Positive Aspect Mentions</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="negativeCount">0</h3>
+                        <p>Negative Aspect Mentions</p>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <div class="chart-box">
+                        <h3>Sentiment Distribution</h3>
+                        <canvas id="sentimentPieChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <h3>Aspect Scores (Average)</h3>
+                        <canvas id="aspectBarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resultsSection" class="results-section" style="display: none;">
+                <div class="card overall-sentiment">
+                    <h2>Top Aspects</h2>
+                    <div class="top-aspects-container">
+                        <div class="top-aspect-item">
+                            <p class="aspect-label">Most Positive </p>
+                            <div id="topPositiveAspect" class="sentiment-badge sentiment-positive"></div>
+                        </div>
+                        <div class="top-aspect-item">
+                            <p class="aspect-label">Most Negative </p>
+                            <div id="topNegativeAspect" class="sentiment-badge sentiment-negative"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card aspect-scores">
+                    <h2>Aspect Analysis</h2>
+                    <div id="aspectResults" class="aspect-grid"></div>
+                </div>
+
+                <div class="card review-display">
+                    <h3>Analyzed Review</h3>
+                    <p id="analyzedReview" class="review-text"></p>
+                </div>
+            </div>
+
+            <div id="loadingSpinner" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing your review...</p>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+            <div class="info-section card">
+                <h3>ℹ️ How It Works</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-icon">🍕</span>
+                        <h4>Food</h4>
+                        <p>Dishes, taste, quality</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">👨‍🍳</span>
+                        <h4>Service</h4>
+                        <p>Staff, waiters, attention</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🏮</span>
+                        <h4>Ambience</h4>
+                        <p>Atmosphere, decor, music</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💰</span>
+                        <h4>Price</h4>
+                        <p>Cost, value, affordability</p>
+                    </div>
+                </div>
+                <div class="scoring-info">
+                    <p><strong>Scoring:</strong> 
+                        <span class="score-positive">+1 or more (Positive)</span>, 
+                        <span class="score-negative">-1 or less (Negative)</span>, 
+                        <span class="score-neutral">0 (Neutral/Not mentioned)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

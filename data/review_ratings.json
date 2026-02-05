@@ -1,0 +1,698 @@
+[
+  {
+    "timestamp": "2026-02-04T23:29:55.455538",
+    "review": "my food was disgustingly good",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:33:06.469969",
+    "review": "you food is very unhealthy",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:33:36.362604",
+    "review": "you food is very bad",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:34:02.994771",
+    "review": "To be completely fair, the only redeeming factor was the food, which was above average, but couldn't make up for all the other deficiencies of Teodora",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:34:13.719164",
+    "review": "bad food",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:56:20.137570",
+    "review": "the staff was so horrible to us",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:56:25.824405",
+    "review": "Service was excellent and waiters were very attentive but not bothersome.",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:56:27.839794",
+    "review": "Service was excellent and waiters were very attentive but not bothersome.",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:56:40.705947",
+    "review": "Service was excellent and waiters were very attentive",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:56:49.656039",
+    "review": "your food is bad",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:57:20.999202",
+    "review": "The menu prices are a bit expensive for what you get in quality and portion size.",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:57:40.641334",
+    "review": "The food was equally impressive. Compliments to Chef Hussain for the delicious and beautifully presented dishes.",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:58:12.580822",
+    "review": "Overall a very nice experience, incredible food and we would love to come back again.",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:58:52.775261",
+    "review": "Im not recommend this restaurant\nthey are very rude chefs, was the worst food ever and bad experience",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:59:32.000574",
+    "review": "In my option Medlar is good quality ingredients cooked well, but nothing taste or combination wise that will excite the adventurous diner.",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-04T23:59:53.760627",
+    "review": "Good food but no music and personel comming to tabel any 5 min.",
+    "overall_sentiment": "Positive",
+    "overall_score": 3,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 1,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:00:12.839650",
+    "review": "Good food but no music and personnel coming to table any 5 min. If you need romantic atmosphere this is not good place but bissnes dinner absolutely yes.",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:00:23.861427",
+    "review": "Good service and excellent food and wine list but the wine prices are astronomical",
+    "overall_sentiment": "Positive",
+    "overall_score": 3,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 1,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:00:40.958017",
+    "review": "Good food bad service. Apart from rebecca",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": 1,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:00:52.789357",
+    "review": "Good food but bad service. Apart from rebecca",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": 1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:01:39.309736",
+    "review": "Food was excellent, service was poor",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:01:45.842865",
+    "review": "Food was excellent, service was very poor",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:01:54.098982",
+    "review": "Food was excellent but service was very poor",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:02:39.305455",
+    "review": "The service here, the atmosphere and the customer service was fantastic.",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:03:08.185248",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:03:28.277112",
+    "review": "Foods gone downhill ever since they changed their menu. Used to be really good Turkish grill now it’s bland and no flavour",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:03:51.815904",
+    "review": "The price is much fair for the food",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:04:09.154870",
+    "review": "The price is much fair with the amount of food",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:04:14.367746",
+    "review": "The price is much fair with the amount",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:04:28.226238",
+    "review": "All show, no substance. Only good thing about it was the interior. The food was very poor, overpriced and small portions",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:04:37.697209",
+    "review": "All show, no substance. Only good thing about it was the interior. The food was very bad, overpriced and small portions",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:04:44.766985",
+    "review": "Only good thing about it was the interior. The food was very bad, overpriced and small portions",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 0,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:05:47.878245",
+    "review": "Price is too expensive",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:05:52.641330",
+    "review": "food is too expensive",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:06:21.076988",
+    "review": "Visited here for my birthday, and nothing short of  a awful experience.",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:06:29.370222",
+    "review": "Visited here for my birthday, and nothing short of  a awful experience. We turned up slightly late and they was very accommodating to get us in.",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:07:12.538206",
+    "review": "They kept ignoring us when we asked how long. They let group who arrived after us in before us and we were the same amount of peopl",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:07:21.379255",
+    "review": "Very rude security staff who were acting like they own this place.",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:08:07.181239",
+    "review": "I went there with my wife and I mustbadmist I was surprisung disappointed. We went to this place based on a recommendation and we seriously regret it. The food was dry and cold and simply tasteless",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:08:21.927127",
+    "review": "I went there with my wife and I mustbadmist I was surprisung disappointed. We went to this place based on a recommendation and we seriously regret it. The food was dry and cold and simply tasteless. the service was so so bad.",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:09:14.882324",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:09:21.375859",
+    "review": "One of the best vibing places I have ever visited.One of the sweetest staff very friendly and made us feel very comfortable.",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:10:27.118905",
+    "review": "food is good but bad service",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T00:10:49.488599",
+    "review": "you food is very unhealthy",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": -1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:25:50.570726",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": 0,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:26:45.043596",
+    "review": "the staff was so horrible to us",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:26:52.284692",
+    "review": "Only good thing about it was the interior. The food was very bad, overpriced and small portions",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 0,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:00.451901",
+    "review": "Service was excellent and waiters were very attentive.",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": 0,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:08.159809",
+    "review": "Very rude security staff who were acting like they own this place.",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:11.636529",
+    "review": "The menu prices are a bit expensive for what you get in quality and portion size.",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": 0,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:19.127026",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:32.526922",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": -1,
+      "price": 1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:37.956842",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Positive",
+    "overall_score": 3,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 1,
+      "price": 1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:42.075228",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": 0,
+      "price": 1,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:27:48.713648",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Positive",
+    "overall_score": 3,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 0,
+      "price": 1,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:34:02.380251",
+    "review": "Overall a very nice experience, incredible food and we would love to come back again.",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:34:08.215813",
+    "review": "Unfortunately, my experience here was terrible. The service was slow and disorganized, the food was of very poor quality",
+    "overall_sentiment": "Negative",
+    "overall_score": -2,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-05T21:46:36.956808",
+    "review": "food is good but bad service",
+    "overall_sentiment": "Neutral",
+    "overall_score": 0,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": -1
+    }
+  }
+]
