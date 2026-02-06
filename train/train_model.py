@@ -102,8 +102,8 @@ class Word2VecAspectSentimentModel:
         exact_match = accuracy_score(y_test, y_pred)
         hamming = 1 - hamming_loss(y_test, y_pred)
 
-        print(f"   Exact Match Accuracy: {exact_match*100:.2f}%")
-        print(f"   Hamming Score (per-label): {hamming*100:.2f}%")
+        print(f"Exact Match Accuracy: {exact_match*100:.2f}%")
+        print(f"Hamming Score (per-label): {hamming*100:.2f}%")
 
     def _train_sentiment_model(self, sentiment_data):
         sentences = [item[0] for item in sentiment_data]
@@ -127,11 +127,10 @@ class Word2VecAspectSentimentModel:
         print("\n")
         print(f"Sentiment Classification Results:")
         print(f"Accuracy: {accuracy*100:.2f}%")
-        print(f"F1-Score : {f1*100:.2f}")
+        print(f"F1-Score: {f1*100:.2f}%")
 
         cv_scores = cross_val_score(self.sentiment_classifier, X_train, y_train, cv=5)
-        print("\n")
-        print(f"Mean CV Accuracy: {cv_scores.mean()*100:.2f}% (+/- {cv_scores.std()*100:.2f}%)")
+        print(f"Mean Cross Validation Accuracy: {cv_scores.mean()*100:.2f}% (Standard Dev: {cv_scores.std()*100:.2f}%)")
 
     def _save_models(self):
         os.makedirs('models', exist_ok=True)
