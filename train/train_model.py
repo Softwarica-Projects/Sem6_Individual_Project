@@ -3,11 +3,13 @@ import numpy as np
 from sklearn.svm import LinearSVC
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.metrics import accuracy_score, hamming_loss, f1_score
+from sklearn.metrics import accuracy_score, hamming_loss, f1_score, confusion_matrix, classification_report
 from gensim.models import KeyedVectors
 import spacy
 import os
 import sys
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
@@ -104,6 +106,8 @@ class Word2VecAspectSentimentModel:
 
         print(f"Exact Match Accuracy: {exact_match*100:.2f}%")
         print(f"Hamming Score (per-label): {hamming*100:.2f}%")
+        
+        self._plot_aspect_results(y_test, y_pred)
 
     def _train_sentiment_model(self, sentiment_data):
         sentences = [item[0] for item in sentiment_data]
@@ -131,7 +135,68 @@ class Word2VecAspectSentimentModel:
 
         cv_scores = cross_val_score(self.sentiment_classifier, X_train, y_train, cv=5)
         print(f"Mean Cross Validation Accuracy: {cv_scores.mean()*100:.2f}% (Standard Dev: {cv_scores.std()*100:.2f}%)")
+        
+        self._plot_confusion_matrix(y_test, y_pred)
+        self._plot_cross_validation(cv_scores)
 
+    def _plot_aspect_results(self, y_test, y_pred):
+        """Plot aspect distribution heatmap"""
+        fig, ax = plt.subplots(1, 1, figsize=(10, 6))
+        y_test_counts = y_test.sum(axis=0)
+        y_pred_counts = y_pred.sum(axis=0)
+        comparison_data = np.array([y_test_counts, y_pred_counts])
+        sns.heatmap(comparison_data, annot=True, fmt='g', cmap='YlOrRd', 
+                   xticklabels=self.aspect_categories, 
+                   yticklabels=['Actual', 'Predicted'],
+                   cbar_kws={'label': 'Count'},
+                   ax=ax, linewidths=1, linecolor='black')
+        ax.set_title('Aspect Distribution (Actual vs Predicted)', fontsize=14, fontweight='bold')
+        ax.set_xlabel('Aspect Category', fontsize=12, fontweight='bold')
+        
+        plt.tight_layout()
+        plt.savefig('images/aspect_classification_results.png', dpi=300, bbox_inches='tight')
+        plt.show(block=False)
+        plt.pause(1)
+
+    def _plot_confusion_matrix(self, y_test, y_pred):
+        fig, ax = plt.subplots(1, 1, figsize=(8, 6))
+      
+        mask = (y_test != 0)
+        y_test_filtered = y_test[mask]
+        y_pred_filtered = y_pred[mask]
+        
+        cm = confusion_matrix(y_test_filtered, y_pred_filtered, labels=[1, -1])
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+                   xticklabels=['Positive', 'Negative'],
+                   yticklabels=['Positive', 'Negative'],
+                   ax=ax, cbar_kws={'label': 'Count'},
+                   linewidths=1, linecolor='black')
+        ax.set_title('Confusion Matrix (Positive/Negative)', fontsize=14, fontweight='bold')
+        ax.set_ylabel('Actual Sentiment', fontsize=12, fontweight='bold')
+        ax.set_xlabel('Predicted Sentiment', fontsize=12, fontweight='bold')
+        plt.tight_layout()
+        plt.savefig('images/confusion_matrix.png', dpi=300, bbox_inches='tight')
+    
+    def _plot_cross_validation(self, cv_scores):
+        fig, ax = plt.subplots(1, 1, figsize=(8, 6))
+        ax.plot(range(1, len(cv_scores) + 1), cv_scores * 100, 
+                marker='o', linewidth=2, markersize=8, color='#667eea')
+        ax.axhline(y=cv_scores.mean() * 100, color='r', linestyle='--', 
+                   linewidth=2, label=f'Mean: {cv_scores.mean()*100:.2f}%')
+        ax.fill_between(range(1, len(cv_scores) + 1), 
+                        (cv_scores.mean() - cv_scores.std()) * 100,
+                        (cv_scores.mean() + cv_scores.std()) * 100,
+                        alpha=0.2, color='#667eea')
+        ax.set_xlabel('Fold Number', fontsize=12, fontweight='bold')
+        ax.set_ylabel('Accuracy (%)', fontsize=12, fontweight='bold')
+        ax.set_title('Cross-Validation Accuracy', fontsize=14, fontweight='bold')
+        ax.legend()
+        ax.grid(True, alpha=0.3, linestyle='--')
+        ax.set_ylim([0, 100])
+        
+        plt.tight_layout()
+        plt.savefig('images/cross_validation.png', dpi=300, bbox_inches='tight')
+     
     def _save_models(self):
         os.makedirs('models', exist_ok=True)
         with open('models/w2v_aspect_mlb.pkl', 'wb') as f:
@@ -166,12 +231,10 @@ def load_semeval_data():
 if __name__ == "__main__":
     aspect_data, sentiment_data = load_semeval_data()
     model = Word2VecAspectSentimentModel()
-    
     try:
         model.train(aspect_data, sentiment_data)
         print("\n" + "="*60)
         print("Model trained and saved to models folder.")
         print("="*60)
-        
     except FileNotFoundError as e:
         print(str(e))
