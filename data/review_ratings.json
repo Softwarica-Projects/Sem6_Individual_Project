@@ -694,5 +694,137 @@
       "price": 0,
       "service": -1
     }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:10.528213",
+    "review": "Price is too expensive",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:15.292767",
+    "review": "Only good thing about it was the interior. The food was very bad, overpriced and small portions",
+    "overall_sentiment": "Negative",
+    "overall_score": -3,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": -1,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:26.962460",
+    "review": "Service was excellent and waiters were very attentive.",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:32.604235",
+    "review": "Only good thing about it was the interior. The food was very bad, overpriced and small portions",
+    "overall_sentiment": "Negative",
+    "overall_score": -3,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": -1,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:42.888423",
+    "review": "The food was equally impressive. Compliments to Chef Hussain for the delicious and beautifully presented dishes.",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:48.358691",
+    "review": "the staff was so horrible to us",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": -1
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:52.380508",
+    "review": "Service was excellent and waiters were very attentive.",
+    "overall_sentiment": "Positive",
+    "overall_score": 1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": 0,
+      "price": 0,
+      "service": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:22:59.348183",
+    "review": "Overall a very nice experience, incredible food and we would love to come back again.",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:23:08.302510",
+    "review": "Only good thing about it was the interior. The food was very bad, overpriced and small portions",
+    "overall_sentiment": "Negative",
+    "overall_score": -3,
+    "aspect_scores": {
+      "ambience": -1,
+      "food": -1,
+      "price": -1,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:23:17.204761",
+    "review": "very bad food",
+    "overall_sentiment": "Negative",
+    "overall_score": -1,
+    "aspect_scores": {
+      "ambience": 0,
+      "food": -1,
+      "price": 0,
+      "service": 0
+    }
+  },
+  {
+    "timestamp": "2026-02-06T18:23:24.736479",
+    "review": "love the env",
+    "overall_sentiment": "Positive",
+    "overall_score": 2,
+    "aspect_scores": {
+      "ambience": 1,
+      "food": 1,
+      "price": 0,
+      "service": 0
+    }
   }
 ]

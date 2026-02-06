@@ -118,9 +118,10 @@ class Word2VecAspectSentimentModel:
         X = self.texts_to_vectors(sentences)
 
         X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=0.2, random_state=42
+            X, y, test_size=0.2, random_state=42, stratify=y 
         )
-        self.sentiment_classifier = LinearSVC(random_state=42, max_iter=2000)
+        
+        self.sentiment_classifier = LinearSVC(random_state=42, max_iter=2000, class_weight='balanced')
 
         self.sentiment_classifier.fit(X_train, y_train)
 
